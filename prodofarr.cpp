@@ -9,9 +9,6 @@ class Solution {
 public:
        vector<int> productExceptSelf(vector<int>& nums) {
         vector <int> left(nums.size(),1);
-        vector <vector<int>> p;
-        if (nums.size() < 3 || nums.size() > 1000)
-            return left;
         for (int i = 1; i < nums.size();i++)
         {
             left[i] = left[i - 1] * nums[i - 1];
