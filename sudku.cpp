@@ -38,8 +38,6 @@ public:
                 {
                     for(int j = f; j < f+3;j++)
                     {
-                        if (i == 8 && j == 8 && z==6)  
-                            return true; 
                         if (board[i][j]  == '.') continue;
                         if(s.count(board[i][j])) return false;
                         s.insert(board[i][j]);
